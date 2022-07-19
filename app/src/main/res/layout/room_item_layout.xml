@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/heading_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Room Details  "
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/room_name_label_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Name  "
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heading_textView"/>
+
+    <TextView
+        android:id="@+id/room_name_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Name of room  "
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/room_name_label_textView"
+        app:layout_constraintTop_toBottomOf="@+id/heading_textView"/>
+
+
+    <TextView
+        android:id="@+id/is_occupied_label_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Is Occupied  "
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/room_name_label_textView"/>
+
+
+
+    <TextView
+        android:id="@+id/is_occupied_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Result  "
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/is_occupied_label_textView"
+        app:layout_constraintTop_toBottomOf="@+id/room_name_textView"/>
+
+
+
+    <TextView
+        android:id="@+id/max_occupancy_label_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Max. Occupancy:  "
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/max_occupancy_label_textView"
+        app:layout_constraintTop_toBottomOf="@+id/is_occupied_label_textView"/>
+
+
+    <TextView
+        android:id="@+id/max_occupancy_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Total No. of people:  "
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/max_occupancy_label_textView"
+        app:layout_constraintTop_toBottomOf="@+id/is_occupied_textView"/>
+
+    <TextView
+        android:id="@+id/id_label_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Id "
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/max_occupancy_label_textView"/>
+
+    <TextView
+        android:id="@+id/id_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Id info"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/id_label_textView"
+        app:layout_constraintTop_toBottomOf="@+id/max_occupancy_textView"/>
+
+    <TextView
+        android:id="@+id/created_at_label_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Created at"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_label_textView"/>
+
+
+
+
+    <TextView
+        android:id="@+id/created_at_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Created at result"
+        android:textSize="16dp"
+        app:layout_constraintStart_toEndOf="@+id/created_at_label_textView"
+        app:layout_constraintTop_toBottomOf="@+id/id_textView"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/room_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

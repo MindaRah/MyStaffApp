@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My People and Room App</string>
+    <string name = "Staff">Staff</string>
+    <string name="Rooms">Rooms</string>
+</resources>

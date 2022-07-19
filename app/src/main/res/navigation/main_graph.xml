@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.mycolleagueapp.view.ui.fragment.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_roomFragment"
+            app:destination="@id/roomFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_staffFragment"
+            app:destination="@id/staffFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/roomFragment"
+        android:name="com.example.mycolleagueapp.view.ui.fragment.RoomFragment"
+        android:label="fragment_room"
+        tools:layout="@layout/fragment_room" >
+        <action
+            android:id="@+id/navigate_to_roomFragment"
+            app:destination="@id/roomDetailsFragment" />
+        <action
+            android:id="@+id/action_roomFragment_to_roomDetailsFragment"
+            app:destination="@id/roomDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/staffFragment"
+        android:name="com.example.mycolleagueapp.view.ui.fragment.StaffFragment"
+        android:label="fragment_staff"
+        tools:layout="@layout/fragment_staff" >
+        <action
+            android:id="@+id/navigateStaffDetailsFragment"
+            app:destination="@id/staffDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/roomDetailsFragment"
+        android:name="com.example.mycolleagueapp.view.ui.fragment.RoomDetailsFragment"
+        android:label="fragment_room_details"
+        tools:layout="@layout/fragment_room_details" />
+    <fragment
+        android:id="@+id/staffDetailsFragment"
+        android:name="com.example.mycolleagueapp.view.ui.fragment.StaffDetailsFragment"
+        android:label="fragment_staff_details"
+        tools:layout="@layout/fragment_staff_details" />
+</navigation>
